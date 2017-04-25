@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url(./iconfont.eot?t=1493023454862); /* IE9*/
-  src: url(./iconfont.eot?t=1493023454862#iefix) format('embedded-opentype'), /* IE6-IE8 */
-  url(./iconfont.woff?t=1493023454862) format('woff'), /* chrome, firefox */
-  url(./iconfont.ttf?t=1493023454862) format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url(./iconfont.svg?t=1493023454862#iconfont) format('svg'); /* iOS 4.1- */
+  src: url(./iconfont.eot?t=1493087544292); /* IE9*/
+  src: url(./iconfont.eot?t=1493087544292#iefix) format('embedded-opentype'), /* IE6-IE8 */
+  url(./iconfont.woff?t=1493087544292) format('woff'), /* chrome, firefox */
+  url(./iconfont.ttf?t=1493087544292) format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url(./iconfont.svg?t=1493087544292#iconfont) format('svg'); /* iOS 4.1- */
 }
 
 .fa {
@@ -15,6 +15,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.fa-comments:before { content: "\e69b"; }
+
+.fa-form:before { content: "\e6a2"; }
+
+.fa-search:before { content: "\e620"; }
+
+.fa-user:before { content: "\e659"; }
+
+.fa-account:before { content: "\e6a3"; }
+
+.fa-comments1:before { content: "\e6a7"; }
+
 .fa-subway:before { content: "\e73f"; }
-.fa-search:before
 

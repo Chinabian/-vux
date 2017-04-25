@@ -8,8 +8,7 @@ export default {
                 a[i] = b[i]
             }
         }
-    },
-    isParent (children, parent) {
+    },    isParent (children, parent) {
         if (!parent) return false
         while (children) {
             if (children === parent) return true

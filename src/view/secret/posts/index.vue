@@ -2,12 +2,12 @@
     <div>
 
 
-        <xheader></xheader>
+
 
         <flexbox class="flex-box">
-            <flexbox-item :span="2"><div class="flex-demo"><i class="fa fa-subway"></i></div></flexbox-item>
+            <flexbox-item :span="2"><div class="flex-demo" style="text-align: center"><router-link to="/myuser"><i class="fa fa-user"></i></router-link></div></flexbox-item>
             <flexbox-item :span="8" style="text-align: center;color: #ffffff"><div class="flex-demo">秘密</div></flexbox-item>
-            <flexbox-item :span="2"><div class="flex-demo"><i class="fa fa-search"></i></div></flexbox-item>
+            <flexbox-item :span="2"><div class="flex-demo" style="text-align: center"><i class="fa fa-search"></i></div></flexbox-item>
         </flexbox>
         <div>
 
@@ -17,18 +17,22 @@
                             <tab :line-width=2 active-color='#fc378c' >
 
                                     <tab-item class="vux-center" :key="index" >
-                                        <selector value="天鹅坪":options="list1" ></selector>
+                                        <router-link to="/"><selector value="天鹅坪":options="list1" ></selector></router-link>
                                     </tab-item>
 
                                     <tab-item class="vux-center"  :key="index" >
-                                        全服
+                                        <div style="text-decoration: none">全服</div>>
                                     </tab-item>
 
 
-                                    <tab-item class="vux-center"  :key="index" >热门</tab-item>
+                                    <tab-item class="vux-center"  :key="index" >
+                                        <div style="text-decoration: none">热门</div>>
+                                    </tab-item>
 
 
-                                    <tab-item class="vux-center"  :key="index">赏</tab-item>
+                                    <tab-item class="vux-center"  :key="index">
+                                        <div style="text-decoration: none"> 赏</div>>
+                                    </tab-item>
 
                             </tab>
                             <card></card>
@@ -82,10 +86,6 @@
             return {
                 list2: list(),
                 demo2: '美食',
-                list3: ['收到的消息', '发出的消息'],
-                demo3: '收到的消息',
-                list4: ['正在正映', '即将上映'],
-                demo4: '即将上映',
                 demoDisabled: 'A',
                 list1:['天鹅坪','破阵子','唯满侠','双梦镇'],
                 index: 0,
